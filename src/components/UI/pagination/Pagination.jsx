@@ -1,35 +1,19 @@
 import React from 'react';
+import cl from './Pagination.module.css'; // Импортируем стили из CSS-модуля
 
 const Pagination = ({ totalPages, page, changePage }) => {
     const pagesArray = Array.from({ length: totalPages }, (_, index) => index + 1);
-
     return (
-        <div className="page__wrapper">
-            {pagesArray.length > 1 && (
-                <>
-                    <span
-                        onClick={() => changePage(page - 1)}
-                        className={page === 1 ? 'page page__disabled' : 'page'}
-                    >
-                        Назад
-                    </span>
-                    {pagesArray.map((p) => (
-                        <span
-                            onClick={() => changePage(p)}
-                            key={p}
-                            className={page === p ? 'page page__current' : 'page'}
-                        >
-                            {p}
-                        </span>
-                    ))}
-                    <span
-                        onClick={() => changePage(page + 1)}
-                        className={page === totalPages ? 'page page__disabled' : 'page'}
-                    >
-                        Вперед
-                    </span>
-                </>
-            )}
+        <div className={cl.myPagination}>
+            {pagesArray.map((p) => (
+                <span
+                    key={p}
+                    onClick={() => changePage(p)}
+                    className={page === p ? `${cl.page} ${cl.page__current}` : `${cl.page}`} /* Заменяем фигурные скобки на обычные */
+                >
+                    {p}
+                </span>
+            ))}
         </div>
     );
 };
