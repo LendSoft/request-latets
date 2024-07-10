@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import MySelect from './UI/select/MySelect'; // Подставьте правильный путь до вашего компонента MySelect
-import MyInput from './UI/input/MyInput'; // Подставьте правильный путь до вашего компонента MyInput
-import MyButton from './UI/button/MyButton'; // Подставьте правильный путь до вашего компонента MyButton
+import MySelect from './UI/select/MySelect';
+import MyInput from './UI/input/MyInput'; 
+import MyButton from './UI/button/MyButton'; 
 
 const PostForm = ({ create }) => {
     const [post, setPost] = useState({ 

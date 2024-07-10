@@ -1,10 +1,9 @@
-/* Pagination.module.css */
 
 .myPagination {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Расстояние между кнопками пагинации */
-    margin-top: 20px; /* Пример отступа сверху */
+    gap: 5px; 
+    margin-top: 20px; 
 }
 
 .page {
@@ -17,10 +16,10 @@
 }
 
 .page:hover {
-    background-color: #7a5fd3; /* Измененный фиолетовый для состояния наведения */
+    background-color: #7a5fd3;
 }
 
 .page__current {
-    background-color: #7a5fd3; /* Цвет текущей страницы */
+    background-color: #7a5fd3; 
     font-weight: bold;
 }

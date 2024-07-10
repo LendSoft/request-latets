@@ -1,9 +1,9 @@
 .myBtn {
     padding: 13px 20px;
-    color: purple; /* Изменён цвет текста */
+    color: purple;
     font-size: 14px;
     background: transparent;
-    border: 2px solid purple; /* Изменён цвет рамки */
+    border: 2px solid purple;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;

@@ -1,5 +1,5 @@
 import React from 'react';
-import cl from './Pagination.module.css'; // Импортируем стили из CSS-модуля
+import cl from './Pagination.module.css'; 
 
 const Pagination = ({ totalPages, page, changePage }) => {
     const pagesArray = Array.from({ length: totalPages }, (_, index) => index + 1);
@@ -9,7 +9,7 @@ const Pagination = ({ totalPages, page, changePage }) => {
                 <span
                     key={p}
                     onClick={() => changePage(p)}
-                    className={page === p ? `${cl.page} ${cl.page__current}` : `${cl.page}`} /* Заменяем фигурные скобки на обычные */
+                    className={page === p ? `${cl.page} ${cl.page__current}` : `${cl.page}`}
                 >
                     {p}
                 </span>

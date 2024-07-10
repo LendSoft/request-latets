@@ -26,11 +26,11 @@ function Posts() {
                 params: {
                     _limit: limit,
                     _page: page,
-                    q: filter.query // Pass query filter to backend
+                    q: filter.query
                 },
             });
             setPosts(response.data.posts);
-            setTotalPages(getPageCount(response.data.totalcount, limit)); // Calculate total pages using getPageCount
+            setTotalPages(getPageCount(response.data.totalcount, limit));
             console.log(getPageCount(response.data.totalcount, limit));
         } catch (error) {
             console.error('Error fetching posts:', error);
