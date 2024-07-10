@@ -1,0 +1,24 @@
+.myBtn {
+    padding: 13px 20px;
+    color: purple; /* Изменён цвет текста */
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid purple; /* Изменён цвет рамки */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.myBtn:hover {
+    background-color: purple;
+    color: white;
+}
+
+.myBtn:focus {
+    outline: none;
+}
+
+.myBtn:active {
+    transform: translateY(1px);
+}

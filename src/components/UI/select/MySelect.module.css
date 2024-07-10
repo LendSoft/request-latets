@@ -1,0 +1,33 @@
+.mySelect {
+    width: 240px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid purple; /* Цвет рамки */
+    border-radius: 5px;
+    background-color: rgba(128, 0, 128, 0.1); /* Фоновый цвет с прозрачностью */
+    color: purple; /* Цвет текста */
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+    appearance: none; /* Убираем стандартный стиль селекта */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 12.5l-4.572-4.286a.748.748 0 0 1 .572-1.214h8.857a.748.748 0 0 1 .572 1.214L8 12.5z"/></svg>'); /* Иконка стрелки */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+.mySelect:hover,
+.mySelect:focus {
+    border-color: darkviolet; /* Цвет рамки при наведении и фокусе */
+    background-color: rgba(128, 0, 128, 0.2); /* Фоновый цвет с прозрачностью */
+    color: darkviolet; /* Цвет текста при наведении и фокусе */
+}
+
+.mySelect option {
+    background-color: white; /* Цвет фона опций */
+    color: purple; /* Цвет текста опций */
+}
+
+.mySelect:disabled {
+    opacity: 0.6; /* Прозрачность при отключенном состоянии */
+    cursor: not-allowed;
+}

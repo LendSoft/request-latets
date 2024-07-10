@@ -1,0 +1,16 @@
+.myInput {
+    width: 100%;
+    padding: 10px 20px; /* Изменён размер отступов */
+    margin: 10px 0 20px 0; /* Увеличен отступ снизу */
+    border: 2px solid purple; /* Изменён цвет рамки */
+    font-size: 14px;
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+    background-color: rgba(128, 0, 128, 0.1); /* Фоновый цвет с прозрачностью */
+    color: purple; /* Цвет текста */
+    transition: border-color 0.3s;
+}
+
+.myInput:focus {
+    outline: none;
+    border-color: darkviolet; /* Изменён цвет рамки при фокусе */
+}
