@@ -28,18 +28,23 @@
 }
 
 .post-enter {
-    transform: translateX(-350px);
+    transform: scale(0.5);
+    opacity: 0;
 }
 .post-enter-active {
-    transform: translateX(0px);
+    transform: scale(1);
+    opacity: 1;
     transition: all 500ms ease-in;
 }
+
 .post-exit {
+    transform: scale(1);
     opacity: 1;
 }
 .post-exit-active {
-    transform: translateX(-350px);
-    transition: all 500ms ease-in;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 500ms ease-out;
 }
 
 .navbar {
